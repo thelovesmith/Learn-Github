@@ -1,1 +1,1 @@
-console.log("JavaScript File is Loaded")
+consolelog("JavaScript File is Loaded")

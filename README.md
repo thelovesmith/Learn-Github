@@ -69,6 +69,11 @@
 - You'll need to also add what's called an ssh key to github https://help.github.com/articles/generating-an-ssh-key/
 - Now you can use the ssh url when cloning instead of https
 
+**If you ever need to remove and ssh key from your MAC, if they're in the default location you can run these commands...**
+
+- rm ~/.ssh/github_rsa.pub
+- rm ~/.ssh/id_rsa.pub
+
 ##  Create a repository in github
 
 1. Go to https://github.com/

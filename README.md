@@ -79,12 +79,17 @@
 
 1. Once you've created the repo, you'll be taken to repo page
 1. In the "Quick setup" section, copy and paste the https url
-1. Go to a suitable location in the terminal (let's do `~/dev/`) and type `git clone ` and paste the https url (e.g.`git clone https://github.com/mahuntington/asdfasdf.git`)
-1. You may need to enter your github password
+1. Let's create a directory inside the directory you're using today called `github-practice`
+1. Once created, go ahead and `cd` into it, and type `git clone ` then paste the https url (e.g.`git clone https://github.com/GA-Dallas/Learn-Github.git`)
+1. You may need to enter your github username and password
 
 ##  Stage Files
 
-Once you've finished making changes for the moment, it's time to tell git which files need to have their changes logged
+Now, we're going to talk about staging, this is the action we take before we commit our changes to the repository.
+
+In other words, once you've finished making changes, we can tell git which files need to have their changes logged
+
+Here's some ways we can stage our changes...
 
 - `git add specific_file.txt` will log all changes to the file specific_file.text
 - `git add .` will log the changes to all files in the current working directory
@@ -95,7 +100,7 @@ To see the status of which files are in the process of being committed use `git 
 
 ##  Commit Files
 
-Log the files, and give the log a description (or "message") so you can easily remember what was done
+Another way of thinking of commit, is simply logging the changed files and committing them to the repository, and give the log a description (or "message") so you can easily remember what was done
 
 - `git commit -m "changed the database structure to allow for an email address for each user"`
 - check your commits with `git log`
@@ -117,6 +122,8 @@ Pull any changes others made to the repo into your local version of the repo
 
 Open source software is popular because the source code for an open source application is available for viewing on the internet.  If you want to play around with the code of an open source app on github, you can simply fork the repo and make changes to it there.
 
+This is how we could do this...
+
 1. Find the repo on github.com
 1. In the upper right, click the `fork` button
 1. Choose which user (or organization if you belong to any) should create the duplicated repo
@@ -126,7 +133,7 @@ Open source software is popular because the source code for an open source appli
 
 Sometimes you want to get changes that have been made to the original repository
 
-1. Add original remote repo with `git remote add upstream https://github.com/mahuntington/asdfasdf.git`
+1. Add original remote repo with `git remote add upstream https://github.com/GA-Dallas/Learn-Github.git` (example)
 	- `upstream` is a conventional name, it can be anything, though
 	- update the URL to that of the original repo NOT your fork
 1. Pull with `git pull upstream master`
@@ -161,7 +168,7 @@ If you have made a change to your fork that you want to be integrated into the o
 	- If you are working on a feature, it's not complete, but you want to save those changes to the repo (perhaps it's the end of the day), you can use branches to keep your changes off the `master` branch
 - To list all branches run `git branch`
 - To create a new branch run `git branch newbranch`
-- Switch to a branch using `git checkout foo`.  From now on, until you change branches again, all commits will be created on that branch
+- Switch to a branch using `git checkout otherBranchName`.  From now on, until you change branches again, all commits will be created on that branch
 
 ## Push a branch to the repo
 
